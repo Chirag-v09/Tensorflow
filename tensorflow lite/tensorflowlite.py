@@ -1,13 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Feb 28 20:36:31 2020
-
-@author: Chirag
-"""
-
+# To convert your Keras model .h5 to tf.lite form.
 import tensorflow as tf
 
-bring_model = tf.keras.models.load_model("sld_model.h5")
+bring_model = tf.keras.models.load_model("... Your Model ...")
 
 # Convert the Keras model.
 converter = tf.lite.TFLiteConverter.from_keras_model(bring_model)
